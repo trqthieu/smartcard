@@ -43,7 +43,7 @@ public class SuaMaKhuyenMai {
 
     Coupon coupon;
 
-    JLabel lbMaHang = new JLabel("Mã khuyến mại");
+    JLabel lbMaHang = new JLabel("Học phí");
     JTextField tfMaHang;
     JLabel lbTenHang = new JLabel("Giá trị");
     JTextField tfTenHang;
@@ -56,8 +56,8 @@ public class SuaMaKhuyenMai {
 
     JLabel lbDiem = new JLabel("Điểm");
     JTextField tfDiem;
-    JFrame fr = new JFrame("THÊM MÃ KHUYẾN MẠI");
-    JLabel lb = new JLabel("THÊM MÃ KHUYẾN MẠI");
+    JFrame fr = new JFrame("THÊM HỌC PHÍ");
+    JLabel lb = new JLabel("THÊM HỌC PHÍ");
     JButton bt = new JButton("Sửa");
 
     public void show() {

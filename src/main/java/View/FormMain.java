@@ -83,7 +83,7 @@ public class FormMain {
 
     private void initComponents() {
         btDangXuat = new JButton("Đăng xuất");
-        fr = new JFrame("Trang Chủ");
+        fr = new JFrame("HỌC VIỆN KỸ THUẬT MẬT MÃ");
         infoAdmin = new JLabel("ID:" + Integer.toString(Admin.currentAdmin.getId()) + " - " + Admin.currentAdmin.getFullname());
         font = new Font("Serif", Font.PLAIN, 13);
         pn = new JPanel();
@@ -100,14 +100,14 @@ public class FormMain {
         int index = 0;
         if (Admin.currentAdmin.getRole() == ConstAdmin.role.get("giamDoc") || Admin.currentAdmin.getRole() == ConstAdmin.role.get("banHang")) {
             try {
-                img = ImageIO.read(new File("src/main/java/Hinh/thanhtoan.jpg"));
+                img = ImageIO.read(new File("src/main/java/Hinh/thanhtoanhocphi.png"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
             dimg = img.getScaledInstance(226, 140, Image.SCALE_SMOOTH);
             icon = new ImageIcon(dimg);
             btPhieuBanHang = new JButton(icon);
-            lbPhieuBanHang = new JLabel("Thanh Toán", SwingConstants.CENTER);
+            lbPhieuBanHang = new JLabel("Thanh Toán học phí", SwingConstants.CENTER);
             pn.add(btPhieuBanHang);
             pn.add(lbPhieuBanHang);
             lbPhieuBanHang.setFont(font);
@@ -119,14 +119,14 @@ public class FormMain {
 
         if (Admin.currentAdmin.getRole() == ConstAdmin.role.get("giamDoc") || Admin.currentAdmin.getRole() == ConstAdmin.role.get("banHang") || Admin.currentAdmin.getRole() == ConstAdmin.role.get("quanKho")) {
             try {
-                img = ImageIO.read(new File("src/main/java/Hinh/phimcucchay.png"));
+                img = ImageIO.read(new File("src/main/java/Hinh/thuvien.jpg"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
             dimg = img.getScaledInstance(226, 140, Image.SCALE_SMOOTH);
             icon = new ImageIcon(dimg);
             btPhim = new JButton(icon);
-            lbPhim = new JLabel("Phim sắp chiếu", SwingConstants.CENTER);
+            lbPhim = new JLabel("Thư viện sách", SwingConstants.CENTER);
             pn.add(btPhim);
             pn.add(lbPhim);
             btPhim.setBounds((index % 3) * 255, (int) (index / 3) * 185, 250, 150);
@@ -136,32 +136,32 @@ public class FormMain {
         }
 
 
-        try {
-            img = ImageIO.read(new File("src/main/java/Hinh/nhanvien.jpg"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        dimg = img.getScaledInstance(226, 140, Image.SCALE_SMOOTH);
-        icon = new ImageIcon(dimg);
-        btNhanVien = new JButton(icon);
-        lbNhanVien = new JLabel("Nhân Sự", SwingConstants.CENTER);
-        pn.add(btNhanVien);
-        pn.add(lbNhanVien);
-        btNhanVien.setBounds((index % 3) * 255, (int) (index / 3) * 185, 250, 150);
-        lbNhanVien.setBounds((index % 3) * 255, (int) (index / 3) * 185 + 155, 250, 30);
-        lbNhanVien.setFont(font);
-        index++;
+//        try {
+//            img = ImageIO.read(new File("src/main/java/Hinh/nhanvien.jpg"));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        dimg = img.getScaledInstance(226, 140, Image.SCALE_SMOOTH);
+//        icon = new ImageIcon(dimg);
+//        btNhanVien = new JButton(icon);
+//        lbNhanVien = new JLabel("Nhân Sự", SwingConstants.CENTER);
+//        pn.add(btNhanVien);
+//        pn.add(lbNhanVien);
+//        btNhanVien.setBounds((index % 3) * 255, (int) (index / 3) * 185, 250, 150);
+//        lbNhanVien.setBounds((index % 3) * 255, (int) (index / 3) * 185 + 155, 250, 30);
+//        lbNhanVien.setFont(font);
+//        index++;
 
         if (Admin.currentAdmin.getRole() == ConstAdmin.role.get("giamDoc") || Admin.currentAdmin.getRole() == ConstAdmin.role.get("quanKho")) {
             try {
-                img = ImageIO.read(new File("src/main/java/Hinh/khuyen-mai-.jpg"));
+                img = ImageIO.read(new File("src/main/java/Hinh/hocphi.jpg"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
             dimg = img.getScaledInstance(226, 140, Image.SCALE_SMOOTH);
             icon = new ImageIcon(dimg);
             btPhieuNhap = new JButton(icon);
-            lbPhieuNhap = new JLabel("Mã khuyến mại", SwingConstants.CENTER);
+            lbPhieuNhap = new JLabel("Học phí", SwingConstants.CENTER);
             pn.add(btPhieuNhap);
             pn.add(lbPhieuNhap);
             btPhieuNhap.setBounds((index % 3) * 255, (int) (index / 3) * 185, 250, 150);
@@ -193,7 +193,7 @@ public class FormMain {
                 || Admin.currentAdmin.getRole() == ConstAdmin.role.get("banHang")
         ) {
             try {
-                img = ImageIO.read(new File("src/main/java/Hinh/card.jpg"));
+                img = ImageIO.read(new File("src/main/java/Hinh/the.jpg"));
             } catch (IOException e) {
                 e.printStackTrace();
             }

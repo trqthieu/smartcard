@@ -190,9 +190,9 @@ public class CreateInvoice {
 
     private static CreateInvoice instance;
     Font font = new Font("Serif", Font.PLAIN, 13);
-    JFrame fr = new JFrame("Lập hóa đơn");
+    JFrame fr = new JFrame("Mượn trả sách");
     JFrame fr1 = new JFrame("Nhập mã pin");
-    JLabel lb1 = new JLabel("LẬP HÓA ĐƠN", SwingConstants.CENTER);
+    JLabel lb1 = new JLabel("MƯỢN TRẢ SÁCH", SwingConstants.CENTER);
     JPanel pnInvoiceInfo = new JPanel();
     JPanel pnCardInfo = new JPanel();
     JLabel lbNgay, ipNgay;

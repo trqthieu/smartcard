@@ -177,15 +177,15 @@ public class HangHoaController {
         Connection conn = DBConnection.getConnection();
         Vector data = new Vector();
         Vector column = new Vector();
-        column.add("Ma Phim");
-        column.add("Ten phim");
+        column.add("Mã sách");
+        column.add("Tên sách");
         column.add("Tóm tắt");
-        column.add("Tuổi giới hạn");
+//        column.add("Tuổi giới hạn");
         column.add("Giá");
-        column.add("Giờ chiếu");
-        column.add("Giờ kết thúc");
+//        column.add("Giờ chiếu");
+//        column.add("Giờ kết thúc");
         column.add("Số lượng");
-        column.add("Giảm giá");
+//        column.add("Giảm giá");
         try {
 
             Statement st = conn.createStatement();
@@ -196,10 +196,10 @@ public class HangHoaController {
                 record.add(rs.getString("id"));
                 record.add(rs.getString("name"));
                 record.add(rs.getString("description"));
-                record.add(rs.getString("age_limit"));
+//                record.add(rs.getString("age_limit"));
                 record.add(rs.getString("price"));
-                record.add(rs.getString("start_time"));
-                record.add(rs.getString("end_time"));
+//                record.add(rs.getString("start_time"));
+//                record.add(rs.getString("end_time"));
 
                 record.add(rs.getString("quality"));
 //
@@ -221,8 +221,8 @@ public class HangHoaController {
         Vector data = new Vector();
         Vector column = new Vector();
         column.add("ID");
-        column.add("Tên Hàng");
-        column.add("Giá bán");
+        column.add("Tên sách");
+        column.add("Giá mượn");
         column.add("Điểm sử dụng");
         try {
 

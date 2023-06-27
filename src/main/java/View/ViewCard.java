@@ -257,7 +257,7 @@ public class ViewCard {
         lbCMND.setFont(font);
         pn.add(lbCMND);   
         
-        lbAddress = new JLabel("Địa chỉ :", SwingConstants.LEFT);
+        lbAddress = new JLabel("Lớp :", SwingConstants.LEFT);
         lbAddress.setBounds(20, 360, 100, 35);
         lbAddress.setFont(font);
         pn.add(lbAddress); 

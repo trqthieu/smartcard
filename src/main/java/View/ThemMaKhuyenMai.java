@@ -36,7 +36,7 @@ public class ThemMaKhuyenMai {
 
     private static ThemMaKhuyenMai instance;
 
-    JLabel lbMaHang = new JLabel("Mã khuyến mại");
+    JLabel lbMaHang = new JLabel("Học phí");
     JTextField tfMaHang = new JTextField(15);
     JLabel lbTenHang = new JLabel("Giá trị");
     JTextField tfTenHang = new JTextField(15);
@@ -49,8 +49,8 @@ public class ThemMaKhuyenMai {
 
     JLabel lbDiem = new JLabel("Điểm");
     JTextField tfDiem = new JTextField(15);
-    JFrame fr = new JFrame("THÊM MÃ KHUYẾN MẠI");
-    JLabel lb = new JLabel("THÊM MÃ KHUYẾN MẠI");
+    JFrame fr = new JFrame("THÊM HỌC PHÍ");
+    JLabel lb = new JLabel("THÊM HỌC PHÍ");
     JButton bt = new JButton("Thêm");
 
     public void show() {
