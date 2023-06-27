@@ -49,8 +49,8 @@ public class DanhMucHangHoa {
     JButton btSua = new JButton("Sửa");
     JButton btThemHang = new JButton("Thêm hàng");
     JTextField btTimKiem = new JTextField();
-    JFrame frDanhMucHangHoa = new JFrame("DANH MỤC HAÀNG HÓA");
-    JLabel lb1 = new JLabel("DANH MỤC HÀNG HÓA");
+    JFrame frDanhMucHangHoa = new JFrame("THƯ VIỆN SÁCH");
+    JLabel lb1 = new JLabel("THƯ VIỆN SÁCH");
     String x = "";
 
     public void showDanhMucHangHoa() {
@@ -70,12 +70,12 @@ public class DanhMucHangHoa {
         tb.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         tb.getColumnModel().getColumn(0).setPreferredWidth(70);
         tb.getColumnModel().getColumn(1).setPreferredWidth(200);
-        tb.getColumnModel().getColumn(2).setPreferredWidth(69);
-        tb.getColumnModel().getColumn(3).setPreferredWidth(100);
-        tb.getColumnModel().getColumn(4).setPreferredWidth(100);
-        tb.getColumnModel().getColumn(5).setPreferredWidth(100);
-        tb.getColumnModel().getColumn(6).setPreferredWidth(100);
-        tb.getColumnModel().getColumn(8).setPreferredWidth(130);
+        tb.getColumnModel().getColumn(2).setPreferredWidth(400);
+        tb.getColumnModel().getColumn(3).setPreferredWidth(200);
+//        tb.getColumnModel().getColumn(4).setPreferredWidth(100);
+//        tb.getColumnModel().getColumn(5).setPreferredWidth(100);
+//        tb.getColumnModel().getColumn(6).setPreferredWidth(100);
+//        tb.getColumnModel().getColumn(8).setPreferredWidth(130);
 
         btTimKiem.setBounds(25, 460, 105, 30);
         btThemHang.setBounds(545, 460, 100, 25);

@@ -145,12 +145,12 @@ public class CouponController {
         Connection conn = DBConnection.getConnection();
         Vector data = new Vector();
         Vector column = new Vector();
-        column.add("ID");
-        column.add("Giá trị khuyến mại");
-        column.add("Đơn vị");
-        column.add("Giá trị áp dụng");
+        column.add("Mã học phí");
+//        column.add("Giá trị khuyến mại");
+//        column.add("Đơn vị");
+        column.add("Số tiền");
         column.add("Mô tả");
-        column.add("Đểm");
+//        column.add("Đểm");
 
         try {
 
@@ -159,11 +159,11 @@ public class CouponController {
             while (rs.next()) {
                 Vector record = new Vector();
                 record.add(rs.getString("id"));
-                record.add(rs.getString("value"));
-                record.add(rs.getString("type"));
+//                record.add(rs.getString("value"));
+//                record.add(rs.getString("type"));
                 record.add(rs.getString("price"));
                 record.add(rs.getString("description"));
-                record.add(rs.getInt("point"));
+//                record.add(rs.getInt("point"));
                 data.add(record);
             }
             conn.close();

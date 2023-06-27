@@ -49,8 +49,8 @@ public class DanhMucMaKhuyenMai {
     JButton btXoa = new JButton("Xóa");
     JButton btSua = new JButton("Sửa");
     JTextField btTimKiem = new JTextField();
-    JFrame frDanhMucHangHoa = new JFrame("DANH MỤC COUPON");
-    JLabel lb1 = new JLabel("DANH MỤC COUPON");
+    JFrame frDanhMucHangHoa = new JFrame("HỌC PHÍ");
+    JLabel lb1 = new JLabel("HỌC PHÍ");
     String x = "";
 
     public void showDanhMucHangHoa() {
@@ -69,10 +69,10 @@ public class DanhMucMaKhuyenMai {
         tb.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         tb.getColumnModel().getColumn(0).setPreferredWidth(80);
         tb.getColumnModel().getColumn(1).setPreferredWidth(200);
-        tb.getColumnModel().getColumn(2).setPreferredWidth(69);
-        tb.getColumnModel().getColumn(3).setPreferredWidth(155);
-        tb.getColumnModel().getColumn(4).setPreferredWidth(336);
-        tb.getColumnModel().getColumn(5).setPreferredWidth(100);
+        tb.getColumnModel().getColumn(2).setPreferredWidth(400);
+//        tb.getColumnModel().getColumn(3).setPreferredWidth(155);
+//        tb.getColumnModel().getColumn(4).setPreferredWidth(336);
+//        tb.getColumnModel().getColumn(5).setPreferredWidth(100);
 
         btTimKiem.setBounds(25, 460, 105, 30);
         btXoa.setBounds(675, 460, 70, 25);

@@ -249,7 +249,7 @@ public class ContainerCreateAccount {
     public void formCreateUser() {
         if (fr != null)
             fr.dispose();
-        fr = new JFrame("Khởi tạo thẻ tích điểm");
+        fr = new JFrame("Tạo thẻ sinh viên");
         Font font = new Font("Serif", Font.PLAIN, 20);
         pn = new JPanel();
         fr.add(pn);
@@ -265,7 +265,7 @@ public class ContainerCreateAccount {
         fr.add(pnTitle);
         pnTitle.setBounds(0, 0, 900, 40);
         pnTitle.setLayout(null);
-        titleInitCard = new JLabel("KHỞI TẠO THẺ KHÁCH HÀNG", SwingConstants.CENTER);
+        titleInitCard = new JLabel("TẠO THẺ SINH VIÊN", SwingConstants.CENTER);
         titleInitCard.setFont(new java.awt.Font("Times New Roman", 1, 28)); // NOI18N
         titleInitCard.setBounds(3, 0, 900, 40);
         pnTitle.add(titleInitCard);
@@ -290,7 +290,7 @@ public class ContainerCreateAccount {
         lbPhone.setFont(font);
         pn.add(lbPhone);
 
-        lbCMND = new JLabel("CMND :", SwingConstants.LEFT);
+        lbCMND = new JLabel("Lớp :", SwingConstants.LEFT);
         lbCMND.setBounds(20, 290, 100, 35);
         lbCMND.setFont(font);
         pn.add(lbCMND);
